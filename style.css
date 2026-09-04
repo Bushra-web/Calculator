@@ -1,0 +1,170 @@
+/* Bushra_Moneeb */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7, #dfe7ef);
+  color: #222;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #ffffff;
+  padding: 20px 5%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-top: 4px solid #6f9bab;
+}
+
+nav h1 {
+  color: #f0a04b;
+  margin: 0;
+  font-size: clamp(20px, 4vw, 26px);
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #888;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+nav a.active {
+  color: #f0a04b;
+}
+
+
+.card {
+  max-width: 900px;
+  width: 90%;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 40px 50px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* ---------- Quote page ---------- */
+.quote {
+  text-align: center;
+}
+
+.quote p {
+  font-weight: bold;
+}
+
+.quote span {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+main {
+  padding: 60px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+main h2 {
+  color: #d9782d;
+}
+
+.calculator {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #8b8f9b;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.screen {
+  height: 90px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  border: 1px solid #d8d8dc;
+  background: #e7e7ea;
+  padding: 20px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #d8d8dc;
+}
+
+.buttons button.operator {
+  background: #f0a04b;
+  color: #fff;
+  border-color: #e0913c;
+}
+
+.buttons button.operator:hover {
+  background: #e0913c;
+}
+
+.buttons button.zero {
+  grid-column: span 2;
+}
+
+/* ---------- Responsive  ---------- */
+@media (max-width: 700px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 10px;
+  }
+
+  main {
+    justify-content: center;
+    text-align: center;
+    padding: 40px 5%;
+  }
+
+  .card {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .buttons button {
+    padding: 16px 0;
+    font-size: 14px;
+  }
+
+  .screen {
+    height: 70px;
+  }
+}

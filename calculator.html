@@ -1,0 +1,57 @@
+
+<!-- Bushra_Moneeb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Magician - Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h1>Math Magician</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="calculator.html" class="active">Calculator</a>
+      <a href="quote.html">Quote</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Lets Do Some Math...</h2>
+
+    <div class="calculator">
+      <div class="screen" id="screen">0</div>
+      <div class="buttons">
+        <button onclick="clearAll()">AC</button>
+        <button onclick="toggleSign()">+/-</button>
+        <button onclick="percent()">%</button>
+        <button class="operator" onclick="chooseOperator('+')">+</button>
+
+        <button onclick="inputNumber('7')">7</button>
+        <button onclick="inputNumber('8')">8</button>
+        <button onclick="inputNumber('9')">9</button>
+        <button class="operator" onclick="chooseOperator('x')">x</button>
+
+        <button onclick="inputNumber('4')">4</button>
+        <button onclick="inputNumber('5')">5</button>
+        <button onclick="inputNumber('6')">6</button>
+        <button class="operator" onclick="chooseOperator('-')">-</button>
+
+        <button onclick="inputNumber('1')">1</button>
+        <button onclick="inputNumber('2')">2</button>
+        <button onclick="inputNumber('3')">3</button>
+        <button class="operator" onclick="chooseOperator('/')">/</button>
+
+        <button class="zero" onclick="inputNumber('0')">0</button>
+        <button onclick="inputDot()">.</button>
+        <button class="operator" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
